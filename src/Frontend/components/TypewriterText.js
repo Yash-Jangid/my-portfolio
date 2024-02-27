@@ -17,16 +17,19 @@ const TypewriterExample = () => {
     };
 
     return (
-        <div>
-            <div style={{paddingBottom:'3vw 0'}}>
-                <h1 style={{ fontSize:"4vw" }} >
-                    Build Design&nbsp; </h1>
-                    <h1  className="text-muted" style={{display:'flex',fontSize:'4vw'}}> 
-                    and&nbsp;<span className='typewriter_text' style={{fontSize:'3vw',alignSelf:'center'}}><TypewriterComponent options={options} onInit={handleInit} /></span></h1>
-                    
+        <div className="">
+            <div className="py-1 md:py-3 lg:py-5">
+                <h1 className='text-2xl md:text-4xl lg:text-6xl font-bold'>
+                    Build Design&nbsp; 
+                </h1>
+                <h1 className="text-4xl md:text-3xl lg:text-6xl font-bold flex items-center my-2"> 
+                    and&nbsp;
+                    <span className='text-3xl md:text-2xl lg:text-5xl text-primary'>
+                        <TypewriterComponent options={options} onInit={handleInit} />
+                    </span>
+                </h1>
             </div>
         </div>
-
     );
 };
 

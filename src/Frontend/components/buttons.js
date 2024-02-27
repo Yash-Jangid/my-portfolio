@@ -1,20 +1,20 @@
-import React from 'react'
+import React from 'react';
 import '../Screens/common.css';
-function Contactbuttons({Value}) {
+
+function Contactbuttons({ Value, className }) {
   return (
-    <div style={{}}>
-      <button className='Contactbutton'>{Value}</button>
+    <div>
+      <button className={`bg-primary text-white py-2 px-4 rounded ${className}`}>{Value}</button>
     </div>
-  )
+  );
 }
 
-function Clickme ({Value}) {
+function Clickme({ Value }) {
   return (
-    <div style={{}}>
-      <button className='clickMe'>{Value}</button>
+    <div>
+      <button className="bg-primary text-light text-1xl py-2 px-4 rounded">{Value}</button>
     </div>
-  )
+  );
 }
-// Path: src/Frontend/components/footer.js
 
 export { Contactbuttons, Clickme };

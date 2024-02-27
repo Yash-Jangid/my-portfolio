@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import '../src/Frontend/Screens/common.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Firstcomponent from './Frontend/Screens/Firstcomponent';
 import Herobanner from './Frontend/components/Herobanner';
+import Aboutme from './Frontend/Screens/Aboutme';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,6 +14,7 @@ root.render(
   <React.StrictMode>
     <Firstcomponent />
       <Herobanner />
+      <Aboutme />
   </React.StrictMode>
 );
 
