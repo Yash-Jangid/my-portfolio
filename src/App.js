@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
-import Firstcomponent from './Frontend/Screens/Firstcomponent';
+import Navigation from './Frontend/Screens/Navigation';
 import Herobanner from './Frontend/Screens/Herobanner';
 import Aboutme from './Frontend/Screens/Aboutme';
 import MyService from './Frontend/Screens/MyService';
@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <div>
-      <Firstcomponent />
+      <Navigation />
       <Scrollama onStepEnter={onStepEnter}>
         {sections.map((section, index) => (
           <Step key={section.id} data={index}>

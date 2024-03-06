@@ -22,12 +22,12 @@ function MyService() {
   }, []);
   return (
     <>
-      <div className=" py-20 bg-gray-100 rounded-md shadow-md " ref={aboutRef}>
-        <div className='w-11/12 md:w-11/12 lg:w-4/5 mx-auto' >
-          <div className='align-middle text-center'>
+      <div className="py-10 md:py-20 bg-gray-100 rounded-md shadow-md" ref={aboutRef}>
+        <div className="w-full md:w-11/12 lg:w-4/5 mx-auto">
+          <div className="text-center">
             <SmTitle title={'My Services'} desTitle={'Services i Offer'} />
           </div>
-          <div className='flex flex-row text-center justify-evenly py-10 '>
+          <div className="flex flex-wrap md:flex-row items-center justify-center md:justify-evenly py-6 md:py-10">
             <Cards title={'Web Developer'} description={`is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`} logo={'serviceFour'} />
             <Cards title={'Mobile App'} description={`is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`} logo={'serviceTwo'} />
             <Cards title={'App Development'} description={`is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`} logo={'serviceSeven'} />
@@ -36,6 +36,7 @@ function MyService() {
         </div>
       </div>
     </>
+
   );
 }
 

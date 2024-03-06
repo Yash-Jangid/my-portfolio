@@ -11,8 +11,13 @@ module.exports = {
         black: '#101010',
         secondary: '#606060',
         light: '#fff5ef',
-        grey:'#f9f9f9',
-        transprint_primary: 'rgb(255, 107, 0, 0.3)'
+        grey: '#f9f9f9',
+        transprint_primary: 'rgb(255, 107, 0, 0.3)',
+        transprint_secondary: 'rgb(0,0,0, 0.5)',
+      },
+      width: {
+        30: '30%',
+        18: '18%',
       },
       fontFamily: {
         first: ["Mochiy Pop One", "sans-serif"],

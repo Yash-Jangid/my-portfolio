@@ -4,68 +4,12 @@ import '../Screens/Fstyle.css';
 import { ReactComponent as WorkIcon } from '../Assets/work.svg';
 import { ReactComponent as SchoolIcon } from '../Assets/school.svg';
 import TimeLine_Element from './ExpericenceData'; // Assuming correct filename
+import './style.css'
 
 export default function TimeLine() {
     let workIconStyle = { background: '#06d6a0' };
     let schoolIconStyle = { background: '#f9c74f' };
 
-    // Styles
-    const sectionTitleStyle = {
-        fontFamily: "Poppins, sans-serif",
-        fontSize: '1.5rem',
-        marginBottom: '1rem',
-        textAlign: 'center',
-    };
-
-    const sectionContentStyle = {
-        display: 'flex',
-        justifyContent: 'space-between',
-        maxWidth: '95%',
-    };
-
-    const cardStyle = {
-        margin: '0.5rem',
-        borderRadius: '0.9rem',
-        color: '#3f3f3f',
-        // minWidth: '15rem',
-        // maxWidth: '20rem',
-        width: '32%'
-    };
-
-    const subTextStyle = {
-        fontSize: '12px',
-        // fontWeight: '400',
-        margin: '0',
-        color:'#8e8e8e'
-    };
-
-    const descriptionStyle = {
-        margin: '0',
-    };
-
-    const verticalDividerStyle = {
-        width: '2px',
-        backgroundColor: '#ccc',
-        margin: '0 0.5rem', // Adjust spacing as needed
-    };
-
-    const title = {
-        fontSize: '1.2em',
-        fontWeight: '500'
-    };
-
-    const skills_Cards = {
-        // width: '%', // Adjust width to your preference
-        display: 'flex',
-        flexWrap: 'wrap', // Allow skills to wrap
-        justifyContent: 'space-between',
-    }
-    const skillItemStyle = {
-        flex: '0 0 48%', // Adjust as needed
-        // marginBottom: '1px',
-        fontSize: '12px',
-        color:'#8e8e8e'
-    }
 
     return (
         <VerticalTimeline
@@ -83,17 +27,17 @@ export default function TimeLine() {
                             iconStyle={workIconStyle}
                             icon={<WorkIcon />}
                         >
-
-                            <h2 style={sectionTitleStyle}>Education</h2>
-                            <div style={sectionContentStyle}>
+                            <h1 className='text-4xl font-bold text-center mb-4 text-secondary'>Education</h1>
+                            <div className='md:flex lg:flex items-center justify-between'>
                                 {element.data.education.map((item, index) => (
                                     <React.Fragment key={item.title}>
-                                        {index > 0 && <div style={verticalDividerStyle}></div>}
-                                        <div style={cardStyle}>
-                                            <h3 style={title}>{item.title}</h3>
-                                            {item.university && <p style={subTextStyle}>{item.university}</p>}
-                                            {item.Duration && <p style={subTextStyle}>{item.Duration}</p>}
-                                            {/* <p style={descriptionStyle}>{item.description}</p> */}
+                                        {index > 0 && <div className='w-full lg:w-px bg-gray-400 my-4'></div>}
+                                        <div className='design justify-between'>
+                                        <div className='w-full mb-6 md:mb-0 z-50'>
+                                            <h3 className='text-lg font-semibold mb-1'>{item.title}</h3>
+                                            {item.university && <p className='text-sm'>{item.university}</p>}
+                                            {item.Duration && <p className='text-sm'>{item.Duration}</p>}
+                                        </div>
                                         </div>
                                     </React.Fragment>
                                 ))}
@@ -101,22 +45,24 @@ export default function TimeLine() {
                         </VerticalTimelineElement>
                     )}
 
+
+
                     {element.data.softwareSkills && (
                         <VerticalTimelineElement
                             dateClassName='date'
                             iconStyle={schoolIconStyle}
                             icon={<SchoolIcon />}
                         >
-                            <h2 style={sectionTitleStyle}>Software Skills</h2>
-                            <div style={sectionContentStyle}>
+                            <h1 className='text-4xl font-bold text-center mb-4 text-secondary'>Software Skills</h1>
+                            <div className='flex flex-wrap '>
                                 {element.data.softwareSkills.map((item, index) => (
                                     <React.Fragment key={item.title}>
-                                        {index > 0 && <div style={verticalDividerStyle}></div>}
-                                        <div style={cardStyle}>
-                                            <h3 style={title}>{item.title}</h3>
-                                            <div style={skills_Cards} className="skill-card">
+                                    {index > 0 && <div className='w-full lg:w-px bg-gray-400 my-4'></div>}
+                                        <div className='w-full md:w-4/12 lg:w-18 p-4'>
+                                            <h3 className='text-center text-xl font-bold mb-2'>{item.title}</h3>
+                                            <div className="flex flex-wrap justify-center">
                                                 {item.nest_data.map(skill => (
-                                                    <p key={skill} style={skillItemStyle}>{skill}</p>
+                                                    <p key={skill} className='text-sm py-1 px-2 bg-primary rounded-full text-white m-1'>{skill}</p>
                                                 ))}
                                             </div>
                                         </div>
@@ -125,32 +71,33 @@ export default function TimeLine() {
                             </div>
                         </VerticalTimelineElement>
                     )}
-
                     {element.data.experience && (
                         <VerticalTimelineElement
                             dateClassName='date'
                             iconStyle={workIconStyle}
                             icon={<WorkIcon />}
                         >
-                            <h2 style={sectionTitleStyle}>Experience</h2>
-                            <div style={sectionContentStyle}>
+                            <h1 className='text-4xl font-bold text-center mb-4 text-secondary'>Experience</h1>
+                            <div className='flex flex-col lg:flex-row justify-between'>
                                 {element.data.experience.map((item, index) => (
                                     <React.Fragment key={item.title}>
-                                        {index > 0 && <div style={verticalDividerStyle}></div>}
-                                        <div style={cardStyle}>
-                                            <h3 style={{ ...title,  }}>{item.title}</h3>
-                                            <div style={{display:'inline-flex',justifyContent:'space-between',width:'100%'}}>
-                                                {item.Company && <p style={subTextStyle}>{item.Company}</p>}
-                                                {item.Session && <p style={subTextStyle} >{item.Session}</p>}
+                                        {index > 0 && <div className='w-full lg:w-px bg-gray-400 my-4'></div>}
+                                        <div className='design justify-between'>
+                                            <div className='w-full mb-6 z-50'>
+                                                <h3 className='text-lg font-semibold mb-1'>{item.title}</h3>
+                                                <div className='flex flex-col md:flex-row justify-between items-center mb-8'>
+                                                    {item.Company && <p className='text-xxs'>{item.Company}</p>}
+                                                    {item.Session && <p className='text-xxs'>{item.Session}</p>}
+                                                </div>
+                                                <p className='text-sm'>{item.description}</p>
                                             </div>
-                                            <p style={{fontSize:'14px',paddingTop:'1rem'}}>{item.description}</p>
                                         </div>
                                     </React.Fragment>
                                 ))}
                             </div>
+
                         </VerticalTimelineElement>
                     )}
-
                 </div>
             ))}
         </VerticalTimeline>

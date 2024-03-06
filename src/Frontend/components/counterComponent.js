@@ -19,7 +19,7 @@ const CounterComponent = ({ value, title,image }) => {
         <div className='flex'>
             <span className=' items-center py-2 '>
                 <div className='flex md:justify-between justify-between text-4xl font-bold '>
-                    <img src={require(`../Assets/${image}.png`)} alt="phone" className='mr-3' />
+                    <img src={require(`../Assets/${image}.png`)} alt="phone" className='w-1/4 h-1/4 lg:mr-3' />
                     <div>
                         <p className='text-3xl font-extrabold text-primary'>
                             {counter}+

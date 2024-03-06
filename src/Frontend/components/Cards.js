@@ -12,7 +12,7 @@ export default function Cards({ title, description, logo, index }) {
             const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
             // Calculate when the section is in the middle of the viewport
-            const isMiddle = rect.top <= windowHeight  && rect.bottom >= windowHeight / 2;
+            const isMiddle = rect.top <= windowHeight && rect.bottom >= windowHeight / 2;
             setIsInView(isMiddle);
         };
 
@@ -30,7 +30,8 @@ export default function Cards({ title, description, logo, index }) {
 
     return (
         <motion.div
-            className="md:w-3/12 md:mx-2 md:py-4 lg:w-3/12 lg:p-6 lg:mx-4 border border-transprint_primary rounded-lg shadow "
+            className="mb-8 w-4/5 md:w-1/2  md:mx-2 md:my-4 lg:w-3/12 lg:mx-4 
+            lg:my-6 border border-transprint_primary rounded-lg shadow p-4 md:p-6"
             ref={aboutRef}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
@@ -38,8 +39,9 @@ export default function Cards({ title, description, logo, index }) {
             transition={{ duration: 0.5 }} // Adjust transition duration as needed
         >
             <img src={require(`../Assets/${logo}.png`)} alt="Logo" className="mx-auto" />
-            <h5 className="mb-2 text-2xl font-second tracking-tight text-gray-900 pt-5">{title}</h5>
-            <p className="px-2 mb-3 text-sm leading-6  text-gray-500">{description}</p>
+            <h5 className="mb-2 text-xl md:text-2xl font-second tracking-tight text-gray-900 pt-5">{title}</h5>
+            <p className="mb-3 text-sm md:text-base leading-6 text-gray-500">{description}</p>
         </motion.div>
+
     );
 }
