@@ -46,6 +46,16 @@ const TimeLine_Element = [
       ],
       experience: [
         {
+          title: 'SalesForce Developer - Intern',
+          Company: 'Vedsphere Consultancy Private Limited',
+          Session: '(6 months)',
+          description: <ul>
+            <li> • Worked on Salesforce platform and developed a module for tracking customer feedbacks.</li>
+            <li> • Developed and implemented custom solutions leveraging Apex, Visualforce, and Lightning components, resulting in a
+              30% increase in sales team productivity.</li>
+            <li> • Built an application using React.js to track the sales activity in real-time.</li>
+          </ul>
+        }, {
           title: 'Web Developer',
           Company: 'ApexWeb Cube Private Limited',
           Session: '(Jun 2022 - Jan 2023)',
@@ -57,27 +67,29 @@ const TimeLine_Element = [
               <li> • Resulted in refined efficiency and client satisfaction.</li>
             </ul>
         },
-        {
-          title: 'SalesForce Developer - Intern',
-          Company: 'Vedsphere Consultancy Private Limited',
-          Session: '(6 months)',
-          description: <ul>
-            <li> • Worked on Salesforce platform and developed a module for tracking customer feedbacks.</li>
-            <li> • Developed and implemented custom solutions leveraging Apex, Visualforce, and Lightning components, resulting in a
-              30% increase in sales team productivity.</li>
-            <li> • Built an application using React.js to track the sales activity in real-time.</li>
-          </ul>
-        },
+
         {
           title: 'Full Stack Developer',
           Company: 'iMaker Technology Private Limited',
-          Session: '(February 2023 - Present)',
+          Session: '(February 2023 - August 2023)',
           description:
             <ul>
               <li>Developed cross-platform web and mobile applications using React JS, React Native, and JavaScript, ensuring seamless functionality and user satisfaction.</li>
               <li> • Configured servers using Plesk, Render, Netlify, and cPanel for efficient backend operations.</li>
               <li> • Utilized Node.js for server-side scripting and backend development.</li>
               <li> • Managed databases including MongoDB, PostgreSQL, and MySQL for data storage and retrieval.</li>
+            </ul>
+
+        },
+        {
+          title: 'Full Stack Developer',
+          Company: 'Deepneura Technologies',
+          Session: '(August 2023 - 16 August 2023)',
+          description:
+            <ul>
+              <li>Developed cross-platform web applications and PWA Application using React JS, Redux, NodeJS and JavaScript Library For UI , ensuring seamless functionality and user satisfaction.</li>
+              <li> • Utilized Node.js for server-side scripting and backend development.</li>
+              <li> • Managed databases including MongoDB, PostgreSQL,for data storage and retrieval.</li>
             </ul>
 
         }
