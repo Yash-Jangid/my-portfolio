@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.8a2ced82.css",
-    "main.js": "/my-portfolio/static/js/main.fcaa479d.js",
+    "main.css": "/my-portfolio/static/css/main.69eabb27.css",
+    "main.js": "/my-portfolio/static/js/main.abe00d4f.js",
     "static/media/WordpresProject3.gif": "/my-portfolio/static/media/WordpresProject3.2879470993a0e1201b38.gif",
     "static/media/yash.Gif": "/my-portfolio/static/media/yash.cd4b19412ba1e1e6ba00.Gif",
     "static/media/Project 2.gif": "/my-portfolio/static/media/Project 2.a0c5ca10a2e30b3c6e3a.gif",
@@ -24,11 +24,11 @@
     "static/media/work.svg": "/my-portfolio/static/media/work.3710b62484ed638074240e99317c6c60.svg",
     "index.html": "/my-portfolio/index.html",
     "static/media/tick.svg": "/my-portfolio/static/media/tick.ddeeefbd0a757863178a.svg",
-    "main.8a2ced82.css.map": "/my-portfolio/static/css/main.8a2ced82.css.map",
-    "main.fcaa479d.js.map": "/my-portfolio/static/js/main.fcaa479d.js.map"
+    "main.69eabb27.css.map": "/my-portfolio/static/css/main.69eabb27.css.map",
+    "main.abe00d4f.js.map": "/my-portfolio/static/js/main.abe00d4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a2ced82.css",
-    "static/js/main.fcaa479d.js"
+    "static/css/main.69eabb27.css",
+    "static/js/main.abe00d4f.js"
   ]
 }
